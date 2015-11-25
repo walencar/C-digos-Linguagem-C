@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main (void) {
+     
+    int COD_PECA1, NUM_PECA1, COD_PECA2, NUM_PECA2;
+    float VALOR_PECA1, VALOR_PECA2, VALOR_FINAL;
+     
+    scanf("%d",&COD_PECA1);
+    scanf("%d",&NUM_PECA1);
+    scanf("%f",&VALOR_PECA1);
+     
+    scanf("%d",&COD_PECA2);
+    scanf("%d",&NUM_PECA2);
+    scanf("%f",&VALOR_PECA2);
+     
+VALOR_FINAL = (NUM_PECA1 * VALOR_PECA1) + (NUM_PECA2 * VALOR_PECA2);
+     
+    printf("VALOR A PAGAR: R$ %.2f\n", VALOR_FINAL);
+     
+     
+system ("pause");
+ 
+return 0;
+ 
+}
