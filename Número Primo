@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+ 
+ 
+int main(void)
+{
+      int a,b,k,raiz,n,c=0;
+       
+       
+      while(scanf("%d",&k)==1){
+                
+                                
+      for(a=1;a<=k;a++){
+      scanf("%d",&n);
+ 
+      if(n==1 || n==0)
+      printf("%d nao eh primo\n",n);
+      else {
+      c=0;
+                      
+                      
+               raiz=sqrt(n);
+               for(b=2;b<=raiz;b++){
+                                     
+               if(n%b==0){
+               c=1;
+               break;
+                         }
+                                   }
+                               
+               if(c==1)
+               printf("%d nao eh primo\n",n);
+               else
+               printf("%d eh primo\n",n);
+               c=0;
+                }
+ 
+                         }
+ 
+      }
+       
+   system ("pause");
+       
+   return 0;   
+}
